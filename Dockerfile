@@ -9,9 +9,9 @@ RUN apt install -y git
 RUN apt install -y wget
 RUN apt install -y pip
 
-RUN mkdir - p /out/Debug
-RUN mkdir - p /out/Release
+RUN mkdir -p /out/Debug
+RUN mkdir -p /out/Release
 
 RUN git clone https://github.com/Unity-Technologies/com.unity.webrtc.git
-WORKDIR com.unity.webrtc/BuildScripts
+WORKDIR com.unity.webrtc/BuildScripts~
 CMD ["build_libwebrtc_android.sh"]
