@@ -14,6 +14,4 @@ RUN apt install -y cpio
 RUN mkdir -p /out/Debug
 RUN mkdir -p /out/Release
 
-RUN git clone https://github.com/Unity-Technologies/com.unity.webrtc.git
-WORKDIR com.unity.webrtc/BuildScripts~
-CMD ["./build_libwebrtc_android.sh"]
+CMD ["./script/runner.sh"]
