@@ -11,7 +11,7 @@ RUN apt install -y pip
 RUN apt install -y sudo
 RUN apt install -y cpio
 
-RUN mkdir -p /out/Debug
-RUN mkdir -p /out/Release
+RUN mkdir -p /com.unity.webrtc/out
+RUN mkdir -p /com.unity.webrtc/out
 
 CMD ["./script/runner.sh"]
