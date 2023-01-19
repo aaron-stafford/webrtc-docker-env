@@ -9,6 +9,7 @@ RUN apt install -y git
 RUN apt install -y wget
 RUN apt install -y pip
 RUN apt install -y sudo
+RUN apt install -y cpio
 
 RUN mkdir -p /out/Debug
 RUN mkdir -p /out/Release
