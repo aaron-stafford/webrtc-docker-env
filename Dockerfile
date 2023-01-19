@@ -14,4 +14,4 @@ RUN mkdir -p /out/Release
 
 RUN git clone https://github.com/Unity-Technologies/com.unity.webrtc.git
 WORKDIR com.unity.webrtc/BuildScripts~
-CMD ["build_libwebrtc_android.sh"]
+CMD ["./build_libwebrtc_android.sh"]
