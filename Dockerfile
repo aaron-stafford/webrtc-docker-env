@@ -13,6 +13,5 @@ RUN apt install -y cpio
 RUN apt install -y zip
 
 RUN mkdir -p /com.unity.webrtc/out
-RUN mkdir -p /com.unity.webrtc/out
 
 CMD ["./script/runner.sh"]
