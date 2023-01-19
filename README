@@ -1,0 +1,7 @@
+Requires approximately 40gig disk space.
+
+sudo ./build.sh # To build the image.
+
+sudo ./run.sh # To execute the script using the image.
+
+Output files will be located in the "out" directory.
