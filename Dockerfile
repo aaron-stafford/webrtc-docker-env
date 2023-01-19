@@ -10,6 +10,7 @@ RUN apt install -y wget
 RUN apt install -y pip
 RUN apt install -y sudo
 RUN apt install -y cpio
+RUN apt install -y zip
 
 RUN mkdir -p /com.unity.webrtc/out
 RUN mkdir -p /com.unity.webrtc/out
