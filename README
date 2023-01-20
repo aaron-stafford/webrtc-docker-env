@@ -1,7 +1,12 @@
 Requires approximately 40gig disk space.
 
-sudo ./build.sh # To build the image.
+# To install docker into a fresh environment (ubuntu) run the following
+bash bash install-docker.sh
 
-sudo ./run.sh # To execute the script using the image.
+# To build the docker image.
+sudo ./build.sh
+
+# To execute the script using the image.
+sudo ./run.sh
 
 Output files will be located in the "out" directory.
