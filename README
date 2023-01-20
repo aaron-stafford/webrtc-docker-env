@@ -9,4 +9,5 @@ sudo ./build.sh
 # To execute the script using the image.
 sudo ./run.sh
 
-Output files will be located in the "out" directory.
+The final webrtc-android.zip artifact built in the container will be available
+in the "result" folder.
