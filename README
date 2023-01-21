@@ -1,3 +1,6 @@
+Dockerfile and ascripts for building the x86_64 version of the official Unity
+Webrtc plugin.
+
 Requires approximately 40gig disk space.
 
 # To install docker into a fresh environment (ubuntu) run the following
