@@ -14,4 +14,4 @@ RUN apt install -y zip
 
 RUN mkdir -p /result
 
-CMD ["./script/runner.sh"]
+#CMD ["./script/runner.sh"]
