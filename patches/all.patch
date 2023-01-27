@@ -1,37 +1,17 @@
 diff --git a/BuildScripts~/build_libwebrtc_android.sh b/BuildScripts~/build_libwebrtc_android.sh
-index 05b76f2..75caf37 100755
+index 05b76f2..d571042 100755
 --- a/BuildScripts~/build_libwebrtc_android.sh
 +++ b/BuildScripts~/build_libwebrtc_android.sh
-@@ -41,9 +41,13 @@ popd
+@@ -41,7 +41,7 @@ popd
  
  mkdir -p "$ARTIFACTS_DIR/lib"
  
 -for target_cpu in "arm64"
 +for target_cpu in "arm64" "x64"
  do
--  mkdir -p "$ARTIFACTS_DIR/lib/${target_cpu}"
-+  if [ $target_cpu = "x64" ]; then
-+    mkdir -p "$ARTIFACTS_DIR/lib/x86_64"
-+  else
-+    mkdir -p "$ARTIFACTS_DIR/lib/${target_cpu}"
-+  fi
+   mkdir -p "$ARTIFACTS_DIR/lib/${target_cpu}"
  
-   for is_debug in "true" "false"
-   do
-@@ -71,7 +75,11 @@ do
-     fi
- 
-     # copy static library
--    cp "$OUTPUT_DIR/obj/libwebrtc.a" "$ARTIFACTS_DIR/lib/${target_cpu}/${filename}"
-+    if [ $target_cpu = "x64" ]; then
-+      cp "$OUTPUT_DIR/obj/libwebrtc.a" "$ARTIFACTS_DIR/lib/x86_64/${filename}"
-+    else
-+      cp "$OUTPUT_DIR/obj/libwebrtc.a" "$ARTIFACTS_DIR/lib/${target_cpu}/${filename}"
-+    fi
-   done
- done
- 
-@@ -83,7 +91,7 @@ do
+@@ -83,7 +83,7 @@ do
    "$PYTHON3_BIN" tools_webrtc/android/build_aar.py \
      --build-dir $OUTPUT_DIR \
      --output $OUTPUT_DIR/libwebrtc.aar \

@@ -11,5 +11,5 @@ then
 fi
 mkdir -p out/Debug
 mkdir -p out/Release
-./BuildScripts~/build_libwebrtc_android.sh
+bash -e BuildScripts~/build_libwebrtc_android.sh
 cp /com.unity.webrtc/artifacts/webrtc-android.zip /result/.
