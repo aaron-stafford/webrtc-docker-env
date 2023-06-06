@@ -11,6 +11,7 @@ RUN apt install -y pip
 RUN apt install -y sudo
 RUN apt install -y cpio
 RUN apt install -y zip
+RUN apt install -y vim
 
 RUN mkdir -p /result
 
