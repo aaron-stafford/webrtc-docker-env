@@ -1,12 +1,10 @@
 Dockerfile and scripts for building the x86_64 version of the official Unity
 Webrtc plugin.
 
-Requires approximately 40gig disk space.
+Requires approximately 80gig disk space.
 
 bash install-docker.sh # To install docker into a fresh environment (ubuntu) run the following
 
-sudo ./run-debug.sh # To launch the image but not run the script.
-
-sudo ./run.sh # To execute the script using the image.
+sudo ./run.sh
 
 Artifacts are available in the /result folder.
