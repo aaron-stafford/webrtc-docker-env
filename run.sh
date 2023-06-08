@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+set -x
 git clone https://github.com/aaron-stafford/libwebrtc-docker-builder
 mkdir -p /result
 pushd libwebrtc-docker-builder
