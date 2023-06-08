@@ -3,12 +3,10 @@ Webrtc plugin.
 
 Requires approximately 40gig disk space.
 
-# To install docker into a fresh environment (ubuntu) run the following
-bash install-docker.sh
+bash install-docker.sh # To install docker into a fresh environment (ubuntu) run the following
 
 sudo ./run-debug.sh # To launch the image but not run the script.
 
 sudo ./run.sh # To execute the script using the image.
 
-The final webrtc-android.zip artifact built in the container will be available
-in the "result" folder.
+Artifacts are available in the /result folder.
