@@ -11,3 +11,4 @@ git clone https://github.com/aaron-stafford/unity-webrtc-plugin-docker-builder
 pushd unity-webrtc-plugin-docker-builder
 sudo ./build.sh
 sudo ./run.sh
+popd
