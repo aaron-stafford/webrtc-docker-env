@@ -3,7 +3,7 @@ set -e
 set -x
 export LIBWEBRTC_REPO=https://github.com/aaron-stafford/com.unity.webrtc
 export LIBWEBRTC_REPO_BRANCH=issue-802-part-1
-git clone --branch variable-approach https://github.com/aaron-stafford/libwebrtc-docker-builder
+git clone https://github.com/aaron-stafford/libwebrtc-docker-builder
 mkdir -p result
 pushd libwebrtc-docker-builder
 ./build.sh
